@@ -5,26 +5,26 @@ $(document).ready(function(){
 	var	o = "0";
 	var	turns = 0;
 	
-	var spot1 = $("spot1");
-	var spot2 = $("spot2");
-	var spot3 = $("spot3");
-	var spot4 = $("spot4");
-	var spot5 = $("spot5");
-	var spot6 = $("spot6");
-	var spot7 = $("spot7");
-	var spot8 = $("spot8");
-	var spot9 = $("spot9");
+	var spot1 = $(".spot1");
+	var spot2 = $(".spot2");
+	var spot3 = $(".spot3");
+	var spot4 = $(".spot4");
+	var spot5 = $(".spot5");
+	var spot6 = $(".spot6");
+	var spot7 = $(".spot7");
+	var spot8 = $(".spot8");
+	var spot9 = $(".spot9");
 	
 	$ (".board li").on("click", function(){
 		if(
-			spot1.hasclass("o") && spot2.hasclass("o") && spot3.hasclass("o") ||
-			spot4.hasclass("o") && spot5.hasclass("o") && spot6.hasclass("o") ||
-			spot7.hasclass("o") && spot8.hasclass("o") && spot9.hasclass("o") ||
-			spot1.hasclass("o") && spot4.hasclass("o") && spot7.hasclass("o") ||
-			spot2.hasclass("o") && spot5.hasclass("o") && spot8.hasclass("o") ||
-			spot3.hasclass("o") && spot6.hasclass("o") && spot9.hasclass("o") ||
-			spot1.hasclass("o") && spot5.hasclass("o") && spot9.hasclass("o") ||
-			spot3.hasclass("o") && spot5.hasclass("o") && spot7.hasclass("o")
+			spot1.hasClass("o") && spot2.hasClass("o") && spot3.hasClass("o") ||
+			spot4.hasClass("o") && spot5.hasClass("o") && spot6.hasClass("o") ||
+			spot7.hasClass("o") && spot8.hasClass("o") && spot9.hasClass("o") ||
+			spot1.hasClass("o") && spot4.hasClass("o") && spot7.hasClass("o") ||
+			spot2.hasClass("o") && spot5.hasClass("o") && spot8.hasClass("o") ||
+			spot3.hasClass("o") && spot6.hasClass("o") && spot9.hasClass("o") ||
+			spot1.hasClass("o") && spot5.hasClass("o") && spot9.hasClass("o") ||
+			spot3.hasClass("o") && spot5.hasClass("o") && spot7.hasClass("o")
 		){
 			alert ("winnar: O");
 			$(".board li") .text("+");
@@ -33,14 +33,14 @@ $(document).ready(function(){
 			$(".board li") .removeClass("x");
     	
 		} else if(
-			spot1.hasclass("x") && spot2.hasclass("x") && spot3.hasclass("x") ||
-			spot4.hasclass("x") && spot5.hasclass("x") && spot6.hasclass("x") ||
-			spot7.hasclass("x") && spot8.hasclass("x") && spot9.hasclass("x") ||
-			spot1.hasclass("x") && spot4.hasclass("x") && spot7.hasclass("x") ||
-			spot2.hasclass("x") && spot5.hasclass("x") && spot8.hasclass("x") ||
-			spot3.hasclass("x") && spot6.hasclass("x") && spot9.hasclass("x") ||
-			spot1.hasclass("x") && spot5.hasclass("x") && spot9.hasclass("x") ||
-			spot3.hasclass("x") && spot5.hasclass("x") && spot7.hasclass("x")
+			spot1.hasClass("x") && spot2.hasClass("x") && spot3.hasClass("x") ||
+			spot4.hasClass("x") && spot5.hasClass("x") && spot6.hasClass("x") ||
+			spot7.hasClass("x") && spot8.hasClass("x") && spot9.hasClass("x") ||
+			spot1.hasClass("x") && spot4.hasClass("x") && spot7.hasClass("x") ||
+			spot2.hasClass("x") && spot5.hasClass("x") && spot8.hasClass("x") ||
+			spot3.hasClass("x") && spot6.hasClass("x") && spot9.hasClass("x") ||
+			spot1.hasClass("x") && spot5.hasClass("x") && spot9.hasClass("x") ||
+			spot3.hasClass("x") && spot5.hasClass("x") && spot7.hasClass("x")
 		){
 			alert ("winnar: X");
 			$(".board li") .text("+");
@@ -65,14 +65,14 @@ $(document).ready(function(){
 			$(this).addClass("disable o");
 			
 			if(
-				spot1.hasclass("o") && spot2.hasclass("o") && spot3.hasclass("o") ||
-				spot4.hasclass("o") && spot5.hasclass("o") && spot6.hasclass("o") ||
-				spot7.hasclass("o") && spot8.hasclass("o") && spot9.hasclass("o") ||
-				spot1.hasclass("o") && spot4.hasclass("o") && spot7.hasclass("o") ||
-				spot2.hasclass("o") && spot5.hasclass("o") && spot8.hasclass("o") ||
-				spot3.hasclass("o") && spot6.hasclass("o") && spot9.hasclass("o") ||
-				spot1.hasclass("o") && spot5.hasclass("o") && spot9.hasclass("o") ||
-				spot3.hasclass("o") && spot5.hasclass("o") && spot7.hasclass("o")
+				spot1.hasClass("o") && spot2.hasClass("o") && spot3.hasClass("o") ||
+				spot4.hasClass("o") && spot5.hasClass("o") && spot6.hasClass("o") ||
+				spot7.hasClass("o") && spot8.hasClass("o") && spot9.hasClass("o") ||
+				spot1.hasClass("o") && spot4.hasClass("o") && spot7.hasClass("o") ||
+				spot2.hasClass("o") && spot5.hasClass("o") && spot8.hasClass("o") ||
+				spot3.hasClass("o") && spot6.hasClass("o") && spot9.hasClass("o") ||
+				spot1.hasClass("o") && spot5.hasClass("o") && spot9.hasClass("o") ||
+				spot3.hasClass("o") && spot5.hasClass("o") && spot7.hasClass("o")
 		){
 				alert("winner: O");
 				turns = 0;
@@ -82,14 +82,14 @@ $(document).ready(function(){
 			$(this) .text(x);
 			$(this).addClass("disable x");
 			if(
-				spot1.hasclass("x") && spot2.hasclass("x") && spot3.hasclass("x") ||
-				spot4.hasclass("x") && spot5.hasclass("x") && spot6.hasclass("x") ||
-				spot7.hasclass("x") && spot8.hasclass("x") && spot9.hasclass("x") ||
-				spot1.hasclass("x") && spot4.hasclass("x") && spot7.hasclass("x") ||
-				spot2.hasclass("x") && spot5.hasclass("x") && spot8.hasclass("x") ||
-				spot3.hasclass("x") && spot6.hasclass("x") && spot9.hasclass("x") ||
-				spot1.hasclass("x") && spot5.hasclass("x") && spot9.hasclass("x") ||
-				spot3.hasclass("x") && spot5.hasclass("x") && spot7.hasclass("x")
+				spot1.hasClass("x") && spot2.hasClass("x") && spot3.hasClass("x") ||
+				spot4.hasClass("x") && spot5.hasClass("x") && spot6.hasClass("x") ||
+				spot7.hasClass("x") && spot8.hasClass("x") && spot9.hasClass("x") ||
+				spot1.hasClass("x") && spot4.hasClass("x") && spot7.hasClass("x") ||
+				spot2.hasClass("x") && spot5.hasClass("x") && spot8.hasClass("x") ||
+				spot3.hasClass("x") && spot6.hasClass("x") && spot9.hasClass("x") ||
+				spot1.hasClass("x") && spot5.hasClass("x") && spot9.hasClass("x") ||
+				spot3.hasClass("x") && spot5.hasClass("x") && spot7.hasClass("x")
 		){
 			alert("winner: X");
 			turns = 0;
