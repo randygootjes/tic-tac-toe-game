@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body {
-	background-color: #454B51;
+	background-color: #A6C6E3;
 	color: #FFFFFF;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
 }
@@ -21,7 +21,8 @@ h1 {
 	width: 350px;
 	overflow: auto;
 	margin: 40px auto;
-	background-color: #5F5F5F;
+	background-color: #6A7B99;
+	border: 8px solid #2B313C;
 	padding-bottom: 40px;
 	border-radius: 10px;
 }
@@ -32,7 +33,7 @@ h1 {
 	height: 70px;
 	width: 70px;
 	font-size: 50px;
-	background-color: #323232;
+	background-color: #52C0AA;
 	color: #FFFFFF;
 	list-style: none;
 	text-align: center;
@@ -41,12 +42,12 @@ h1 {
 
 .board li:hover, .reset:hover{
 	cursor: pointer;
-	background-color: #000;
+	background-color: #F38608;
 }
 
 .reset {
 	border: 0;
-	background-color: #444;
+	background-color: #52C0AA;
 	color: white;
 	width: 70%;
 	padding: 15px;
