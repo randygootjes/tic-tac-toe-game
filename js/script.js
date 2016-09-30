@@ -1,21 +1,20 @@
 // JavaScript Document
 
 $(document).ready(function(){
-	var x = "x";
-	var	o = "0";
-	var	turns = 0;
+	var x = "x",
+		o = "0",
+		turns = 0,
+		spot1 = $(".spot1"),
+		spot2 = $(".spot2"),
+		spot3 = $(".spot3"),
+		spot4 = $(".spot4"),
+		spot5 = $(".spot5"),
+		spot6 = $(".spot6"),
+		spot7 = $(".spot7"),
+		spot8 = $(".spot8"),
+		spot9 = $(".spot9"),
 	
-	var spot1 = $(".spot1");
-	var spot2 = $(".spot2");
-	var spot3 = $(".spot3");
-	var spot4 = $(".spot4");
-	var spot5 = $(".spot5");
-	var spot6 = $(".spot6");
-	var spot7 = $(".spot7");
-	var spot8 = $(".spot8");
-	var spot9 = $(".spot9");
-	
-	$ (".board li").on("click", function(){
+	$(".board li").on("click", function(){
 		if(
 			spot1.hasClass("o") && spot2.hasClass("o") && spot3.hasClass("o") ||
 			spot4.hasClass("o") && spot5.hasClass("o") && spot6.hasClass("o") ||
@@ -103,5 +102,5 @@ $(document).ready(function(){
 				$(".board li") .removeClass("o");
 				$(".board li") .removeClass("x");
 				turns = 0;
-		});
+	});
 });
